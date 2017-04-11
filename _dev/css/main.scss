@@ -1,0 +1,28 @@
+//variables
+$yellow: #fca211;
+$white: #ecd4d4;
+$transparent: rgba(236, 212, 212, 0.15);
+
+//layout
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "plugins/font-awesome";
+@import "_misc/normalize";
+@import "_misc/adjustment";
+@import "_misc/form_reset";
+
+//styles
+@import "plugins/bx-slider_reset";     
+@import "plugins/gradient";    
+@import "plugins/sprite";    
+
+//styles sections
+@import "sections/header";       
+@import "sections/slider";     
+@import "sections/stuff";    
+@import "sections/deliver"; 
+@import "sections/team"; 
+@import "sections/questions"; 
+@import "sections/footer"; 
+
+

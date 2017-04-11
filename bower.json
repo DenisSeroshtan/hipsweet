@@ -1,0 +1,30 @@
+{
+  "name": "hipsweet",
+  "description": "learning lending",
+  "main": "index.html",
+  "authors": [
+    "DenisSeroshtan"
+  ],
+  "license": "mit",
+  "keywords": [
+    "bower",
+    "_dev"
+  ],
+  "homepage": "httm",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_dev/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bxslider-4": "bx-slider.js#^4.2.12",
+    "fancybox": "fancyBox#^3.0.47",
+    "jquery.maskedinput": "^1.4.1",
+    "svg4everybody": "^2.1.7"
+  }
+}

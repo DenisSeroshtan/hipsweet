@@ -1,0 +1,255 @@
+.section__team{
+    min-height: rem(1422px);  
+}
+.container {
+    &.team{
+    }
+}
+.team__desc {
+    @include clearfix;
+    margin-top: rem(83px);
+}
+.team__title {
+    width: 30%;
+    float: left;
+    color: #2b2f60;
+    @include malina;
+    font-size: rem(62px);
+    line-height: 1.2em;
+    margin-right: 5%;
+}
+.team__list {
+    width: 65%;
+    float: left;
+}
+.team__item {
+    @include inlineblock(bottom);
+    width: 32%;
+    padding: rem(20px) rem(25px);
+    @include trans(all .3s);
+    @include bradius(rem(17px));
+    position: relative;
+    cursor: pointer;
+    &:hover{
+        background: #893213;
+        .team__link-title{
+            color: #ffa92b;
+        }
+        .team__link-text{
+            color: #ffffff;
+        } 
+        &:after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: rem(11px) solid #893213;
+            border-right: rem(20px) solid transparent;
+            border-left: rem(20px) solid transparent;
+            top: 100%;
+            left: 50%;
+            margin-left: rem(-18px);
+        }         
+    }
+        &.active{
+        @include bradius(17px);
+        background: #893213;
+        .team__link-title{
+            color: #ffa92b;
+        }
+        .team__link-text{
+            color: #ffffff;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: rem(11px) solid #893213;
+            border-right: rem(20px) solid transparent;
+            border-left: rem(20px) solid transparent;
+            top: 100%;
+            left: 50%;
+            margin-left: rem(-18px);
+        }        
+    }
+}
+.team__link-title {
+    @include malina;
+    color: #2b2f60;
+    font-size: rem(30px);
+    line-height: 1.2em;
+    @include trans(color .3s);
+}
+.team__link-text {
+    color: #8d8d8d;
+    font-size: rem(14px);
+    line-height: rem(30px);
+    @include trans(color .3s);
+}
+//________________________/team content/______________________//
+.team__content {
+    min-height: rem(420px);
+    margin-top: rem(100px);
+}
+.team__tabs{
+    width: 100%;
+    @include colcount;
+    @include colgap(rem(480px));
+    display: none;
+        p {
+        color: #747474;
+        margin-bottom: rem(20px);
+        font-size: rem(14px);
+    }
+    &.active{
+        display: block;
+    }
+}
+
+//________________________/form/______________________//
+.team__inside{
+    margin-top: rem(140px);
+    margin-bottom: rem(70px); 
+    text-align: center;
+}
+.team__inside-wrap {
+    @include inlineblock;
+    margin: 0 rem(36px) rem(36px) 0;
+    position: relative;  
+}    
+.team__pic {
+    display: block;
+    @include cover;
+    min-height: rem(600px);
+    width: rem(460px);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    @include transform(translateX(-50%));
+    
+}
+.form__wrap {
+    display: block;
+    width: rem(843px);
+    background-image: url('../png/team/choc-bg.png');
+    @include cover;
+    border-radius: rem(15px);
+    @include clearfix;
+}
+.form__bl {
+    min-height: rem(408px);
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.form__left{
+    @include malina;
+    display: inline-block;
+    color: #ffffff;
+    font-size: rem(64px);
+    letter-spacing: rem(6px);
+    line-height: 1.2em;
+    padding: rem(120px) 0 rem(135px) 0;
+}
+.form__right{
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    height: 100%;
+    background: rgba(29, 29, 32, 0.84);
+    border-top-right-radius: rem(15px);
+    border-bottom-right-radius: rem(15px);
+    padding: rem(76px) 0 rem(70px) rem(47px);
+}
+.form__right-wrap {
+    color: #fff; 
+    font-size: rem(16px); 
+}
+.form__input {
+    display: block;
+    width: rem(277px);
+    border: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    margin-bottom: rem(27px);
+    color: #fff;
+    font-size: rem(16px);
+    padding:  18px 5px;
+    @include trans(.3s);
+    @include placeholder{
+        color: #fff;
+        font-size: rem(16px);
+        opacity: 1;     
+    }
+    &:focus{
+        border: 1px solid rgba(255, 255, 255, 0.4);
+            @include placeholder{
+            color: rgba(255, 255, 255, 0.4);
+        }
+    }
+    &.tel{
+        letter-spacing: 1.5px;
+    }
+}
+.form__check, .check__text {
+    cursor: pointer;
+}
+
+.form__check:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.form__check:not(checked) + .check__text{
+    position: relative;
+    padding-left: 23px;
+}
+.form__check:not(checked) + .check__text:before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 2px solid #2b0c08;
+    top: 0;
+    left: 0;
+    margin-top: -2px;
+    
+}
+.form__check:checked + .check__text:before{
+    content: "\f00c";
+    font-family: fontAwesome;
+    color: #2b0c08;
+}
+
+.form__btn {
+    width: rem(96px);
+    height: rem(96px);
+    border-radius: 50%;
+    background: #ffb100;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    cursor: pointer;
+    margin-top: rem(-60px);
+    margin-left: rem(-60px);
+    @include trans(all .3s);
+    &:before{
+        content: "";
+        position:absolute;
+        width: rem(50px);
+        height: rem(51px);
+        background-image: url('../png/team/arrow.png');
+        @include cover;
+        top: 50%;
+        left: 50%;;
+        margin-left: rem(-22px);
+        margin-top: rem(-25px);
+        @include trans(all .3s);
+    }
+    &:hover{
+        background: #641a00;
+        &:before{
+            background-image: url('../png/team/arrow-hov.png');
+        }
+    }
+}

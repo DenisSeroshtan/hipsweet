@@ -1,0 +1,81 @@
+
+.container {
+        &.stuff{
+            padding: 0 rem(40px);
+            @include clearfix;
+        }
+}
+.stuff__wrap {
+    width: 62%;
+    float: left;
+    margin-top: rem(90px);
+}
+.stuff__photo {
+    width: 38%;
+    float: left;
+    margin-top: 50px;
+}
+.stuff__photo-pic {
+    display: block;
+    max-width: rem(383px);
+    max-height: rem(708px); 
+    overflow: hidden;
+}
+.stuff__desc{
+    width: 70%;
+}
+.stuff__title {
+    @include malina;
+    font-size: rem(62px);
+    color: rgba(43, 47, 95, 0.91);
+}
+.stuff__text {
+    margin-top: rem(30px);    
+        p {
+            font-family: Arial, sans-serif;
+            font-size: rem(15px);
+            color: #747474;
+    }
+}
+
+.stuff__images {
+    margin-top: rem(65px);
+}
+.stuff__item {
+    @include inlineblock;
+    width: rem(135px);
+    margin-right: rem(60px);
+    &:last-child{
+        margin-right: 0; 
+    }
+    &:first-child{
+        .stuff__item-text{
+            margin-left: rem(-15px);
+        } 
+    }
+}    
+.stuff__item-pic {
+    display: block;
+    height: rem(92px);
+    width: rem(92px);
+    position: relative;
+    background: rgba(31, 34, 68, 0.1);
+    border-radius: 50%;
+
+}
+
+.stuff__pic-png {
+    width: rem(105px);
+    height: rem(92px);
+    overflow: hidden;
+    @include absolute-center;
+    margin-left: rem(-15px);
+}
+.stuff__item-text {
+    @include malina;
+    color: #747474;
+    margin-top: rem(30px);
+}
+
+
+

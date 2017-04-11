@@ -1,0 +1,193 @@
+
+.container{
+    @include clearfix;
+   
+}
+.header__wrap{
+     padding: 0 rem(20px);
+    @include clearfix;
+}
+.header__logo, .header__menu{
+    float: left;
+}
+.header__logo{
+    display: block;
+    width: 30%;
+    margin-top: rem(25px);
+}
+.header__logo-pic{
+    @include inlineblock(middle);
+    height: rem(70px);
+    width: rem(85px);
+    background-image: url(../png/icons/logo/Logo.png);  
+    @include cover;
+    
+}
+.header__logo-text{
+    @include inlineblock(middle);
+    @include malina;
+    font-size: rem(40px);
+    color: #fca211;
+    margin-left: rem(10px);
+    
+}
+.header__menu{
+    width: 55%;
+    margin-top: rem(40px);
+    padding-left: rem(50px);
+
+}
+.nav__list{
+    text-align: center;
+    .nav__item:nth-child(2)::after{
+        display: none;
+    }
+}
+.nav__item{
+  position: relative;
+    @include inlineblock(middle);
+    margin-left: 35px;
+    &:after{
+        content: "";
+        width: 3px;
+        height: 3px;
+        border-left: 1px solid #ecd4d4;
+        border-bottom: 1px solid #ecd4d4;
+        position: absolute;
+        @include transform(rotate(-45deg));
+        top: 50%;
+        left: 100%;
+        margin-top: -2px;
+    } 
+    &:hover{
+        .nav__dropdown{
+        opacity: 1;
+        left: 50%;
+        } 
+        .nav__link{
+            color: $yellow;
+           
+        } 
+        &:after{
+            @include transform(rotate(-225deg));
+            border-color: $yellow;
+        }
+    }  
+}
+.nav__link{ 
+    display: block;
+    color: #ecd4d4;
+    font-family: arial;
+    @include trans(color .3s);   
+    padding: rem(10px);
+}
+
+.nav__dropdown{
+    z-index: 1000;
+    min-width: rem(228px);
+    margin-top: rem(25px);
+    position: absolute;
+    white-space: nowrap;
+    padding: rem(30px) 0;
+    background: rgba(236, 212, 212, 0.92);
+    opacity: 0;
+    left: -9999em;
+    @include transform(translateX(-50%));
+    @include bradius(rem(20px));
+    @include trans(opacity .3s);
+    &:after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: rem(15px) solid rgba(236, 212, 212, 0.92);
+        border-right: rem(25px) solid transparent;
+        border-left: rem(25px )solid transparent;
+        bottom: 100%;
+        left: 50%;
+        margin-left: rem(-20px);       
+    }
+    &:before{
+        content: "";
+        width: 100%;
+        height: rem(60px);
+        position: absolute;
+        top: rem(-43px);
+        left: 0;
+    }  
+}
+.nav__dropdown-item{
+    width: 100%;
+    margin-bottom: rem(15px);
+    position: relative;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &:hover{
+        &:before{
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: 0;
+        left: 0;
+        border-top: rem(12px) solid transparent;
+        border-bottom: rem(12px) solid transparent;
+        border-left: rem(12px) solid $yellow; 
+        @include trans(.3s);
+        }
+        .nav__dropdown-link{
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+}
+.nav__dropdown-link{
+    display: block;
+    font-family: helvetica;
+    color: #6c6b6b;
+    @include trans(.3s);
+    margin: 0px rem(5px) 0px rem(5px);
+}
+
+.header__icons{
+    float: right;
+    width: 15%;
+}
+.header__icons-list{
+    display: block;
+    text-align: right;
+} 
+.header__icons-item {
+    width: 42px;
+    height: 42px;
+    @include inlineblock(middle);
+    margin: rem(40px) 0 0 rem(25px);
+}
+.header__icons-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    @include bradius(50%);
+    background: rgba(236, 212, 212, 0.15);
+    color: #fff;
+    text-align: center;
+    line-height: rem(42px);
+    @include  trans(.3s);
+    &.search:before{
+        content: "\f002";
+        font-family: fontAwesome;
+    }
+    &.kabinet:before{
+        content: "\f2c0";
+        font-family: fontAwesome;     
+    }
+    &:hover{
+        background: $yellow;
+        color: #ce3437; 
+    }
+}
+
+
+
+

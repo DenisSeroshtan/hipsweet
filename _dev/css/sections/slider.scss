@@ -1,0 +1,226 @@
+
+.slider__list{
+    @include clearfix;
+
+}
+.slider__item-sweet{
+    position: relative;  
+    min-height: rem(560px);
+    padding-bottom: rem(48px);
+    &:before{
+        content: "ПИРОЖИНКА";
+        position: absolute;
+        @include malina;
+        font-size: rem(145px);
+        line-height: 1em;
+        color: $transparent;
+        left: 50%;
+        top: 50%;
+        @include transform(translate(-50%, -50%));
+        z-index: 0;
+    }
+}
+
+//--------------slider__left--------------------
+.sweet__left{
+    width: 10%;
+    float: left;
+    margin-top: rem(130px);
+    margin-right: 5%;
+}
+.sweet__left-desc{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-left: 20px;
+    &:hover{
+        .sweet__left-table{
+            left: 100%;
+            opacity: 1;
+        }
+        .sweet__left-icon{
+            background-image: url("../png/icons/hov/mix-trigger.png");
+            
+        }
+    }
+}
+
+.sweet__left-icon{
+    @include inlineblock;
+    width: rem(42px);
+    height: rem(42px);
+    background-image: url("../png/icons/mix-trigger.png");
+    @include cover;
+    @include trans(background-image .3s);
+    cursor: pointer;
+}
+.sweet__left-table{
+    position: absolute;
+    top: -50%;
+    white-space: nowrap;
+    text-align: left;
+    color: #616060;
+    background: rgba(236, 212, 212, 0.92);
+    padding: rem(36px) rem(60px) rem(36px) rem(36px);
+    @include bradius(rem(18px));
+    margin-left: rem(30px);
+    @include trans(opacity .3s);
+    opacity: 0;
+    left: -9999em;
+    z-index: 1000;
+    &:after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top:20px solid transparent;       
+        border-bottom: 20px solid transparent;
+        border-right: 15px solid rgba(236, 212, 212, 0.92);
+        bottom: 50%;
+        right: 100%;
+        margin-bottom: rem(25px);
+
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: rem(100px);
+        top: 0;
+        left: -90px;
+        cursor: pointer;
+    
+    }
+}
+.td__ing-pic{
+    display: inline-block;
+    width: rem(25px);
+    height: rem(25px);
+    margin-right: rem(10px);
+}
+
+.td__ing-text{
+    display: inline-block;
+    margin-right: rem(70px);
+}
+.sweet__left-text{
+    font-family: helvetica;
+    font-size: rem(14px);
+    color: $white;
+    margin-top: rem(15px);
+}
+.sweet__left-time{
+    display: block;
+    margin-top: rem(140px);
+    margin-left: 5px;
+    text-align: left;
+}
+.sweet__left-time-text{
+    font-size: rem(14px);
+    color: $transparent;
+}
+.sweet__left-time-data{
+    @include malina;
+    font-size: rem(20px);
+    line-height: 1rem;
+    font-weight: bold;
+    color: $white;
+}
+//--------------sweet__middle--------------------
+.sweet__middle{
+    width: 40%;
+    float: left;
+    margin-top: 40px;
+    margin-right: 5%;
+}
+.sweet__middle-wrap{
+    max-width: rem(436px);
+    max-height: rem(475px);
+    position: relative;
+    &:after{
+        content: "";
+        height: rem(48px);
+        width: rem(436px);
+        position: absolute;
+        background-image: url('../png/slider/shadow.png');
+        @include cover;
+        top: 100%;
+        left: 0;
+    }
+}
+.sweet__middle-pic{
+    display: block;
+    width: 100% ;
+    height: 100%;
+}
+//--------------sweet__right--------------------
+.sweet__right {
+    width: 40%;
+    float: left;
+}
+.sweet__right-desc {
+    margin-top: rem(75px);
+    
+}
+.sweet__right-title {
+    @include malina;
+    color:#fff;
+    line-height: rem(70px);
+}
+.h2__title{
+    font-size: rem(65px);
+    
+}
+.h2__title2{
+    font-size: rem(65px);
+    padding-top: 60px;
+}
+.sweet__right-text {
+    margin-top: rem(25px);
+    p {
+        color: #fff;
+        font-family: arial;
+    }
+}
+.sweet__right-price {
+    @include inlineblock(middle);
+    @include malina;
+    font-size: rem(62px);
+    color: #fff;
+    padding-right: rem(60px);
+    position: relative;
+    margin-right: rem(40px);    
+    &:after{
+        content: "";
+        position: absolute;
+        width: rem(38px);
+        height: rem(37px);
+        background-image: url(../png/decor/rub.png);
+        @include cover;
+        top: 50%;
+        margin-top: rem(-16px);
+        margin-left: rem(20px);
+    }
+}
+.sweet__right-btn {
+    z-index: 1000;
+    @include inlineblock(middle);
+//    margin-top: 50px;
+}
+.btn__link {
+    font-size: rem(14px);
+    font-weight: bold;
+    line-height: 1rem;
+    padding: rem(15px) rem(25px);
+    border-radius: rem(30px);
+    background: $yellow;
+    display: block;
+    color: #a4151c;
+    @include trans(.3s);
+    z-index: 1000;
+      &:hover{
+          background: #641a00;
+          color: $yellow;
+     }
+}
+

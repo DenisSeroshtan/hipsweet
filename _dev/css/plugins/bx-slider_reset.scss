@@ -1,0 +1,24 @@
+.bx-wrapper{
+    box-shadow: none;
+    border: 0;
+    background: inherit; 
+    margin-bottom: 120px
+}
+.bx-wrapper .bx-loading{
+    background: none;
+    z-index: 0;
+}
+.bx-controls-direction{
+    display: none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+  background: #fff !important;
+  margin: 0 16px 0 16px; 
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
+    background: #fca211 !important;
+}
+.fancybox-skin{
+    background-image: url('../png/deliver/pattern.png'); 
+}
