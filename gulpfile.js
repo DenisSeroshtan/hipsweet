@@ -26,8 +26,8 @@ gulp.task('default', ['watch']);
 
 gulp.task('watch', ['browser-sync'], function() {
     gulp.watch('_dev/css/**/*.scss', ['sass']);
-    gulp.watch(['./bower.json', '_dev/index.html'], ['html'], browserSync.reload);
-    gulp.watch('_dev/js/**/*.js', browserSync.reload);
+    gulp.watch(['./bower.json', '_dev/index.html'], ['html']).on('change', browserSync.reload);
+    gulp.watch('_dev/js/**/*.js').on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
