@@ -1,27 +1,10 @@
 //vars
-$footer-height: 125px;
 $container-width: 1100px;
-$footbg: #ccc;
 
 
 //style
 html{
     font-size: 16px;
-//	@include desktop {
-//		font-size: 16px;
-//	}
-//
-//	@include laptop {
-//		font-size: 15px;
-//	}
-//
-//	@include tablets {
-//		font-size: 14px;
-//	}
-//
-//	@include phones {
-//		font-size: 13px;
-//	}    
 }
 
 body,
@@ -40,51 +23,17 @@ body {
     min-height: 100%;
     overflow: hidden;
     position: relative;
-    min-width: $container-width;           //---static
-//    min-width: 0px;                //---respons
+    min-width: $container-width;          
 }
 
-.wrapper:after {
-    content: "";
-    display: block;
-    height: $footer-height;
-    overflow: hidden;
-//    @include tablets{
-//        height: rem(90px);
-//    }
-}
-
-//.maincontent {
-//    padding-bottom: 50px;
-//}
 .section{
     width: 100%;
     min-height: 760px;
 }
 
 .container {
-    width: $container-width - 20;      //---static
+    width: $container-width - 20;    
     margin: 0 auto;
-//    max-width: 1000px;
-//	@include desktop {
-//		width: 970px;
-//
-//	}
-//
-//	@include laptop {
-//		width: 750px;
-//        padding: 0 rem(20px);
-//	}
-//
-//	@include tablets {
-//		width: 480px;
-//        padding: 0 rem(20px);
-//	}
-//
-//	@include phones {
-//        width: auto;
-//        min-width: 320px;
-//	}        
 }
 
 * {
@@ -113,18 +62,4 @@ h6 {
     font-size: 16px;
     font-weight: normal;
     margin: 0;
-}
-
-footer {
-    background: $footbg;
-    height: $footer-height;
-    width: 100%;
-    margin-top: -$footer-height;
-    position: relative;
-    min-width: $container-width;       //---static
-//    min-width: 0px;                 //---respons
-//     @include tablets{
-//        height: rem(90px);
-//         margin-top: rem(-90px);
-//    }
 }

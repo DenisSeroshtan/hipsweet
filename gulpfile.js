@@ -26,8 +26,8 @@ gulp.task('default', ['watch']);
 
 gulp.task('watch', ['browser-sync'], function() {
     gulp.watch('_dev/css/**/*.scss', ['sass']);
-    gulp.watch(['./bower.json', '_dev/index.html'], ['html'], browserSync.reload);
-    gulp.watch('_dev/js/**/*.js', browserSync.reload);
+    gulp.watch(['./bower.json','_dev/*.html'], ['html']).on('change', browserSync.reload);
+    gulp.watch('_dev/js/**/*.js').on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
@@ -48,7 +48,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('html', function() {
-    return gulp.src('./_dev/index.html')
+    return gulp.src('./_dev/*.html')
         .pipe(wiredep({
             directory: '_dev/bower/'
         }))
@@ -56,7 +56,8 @@ gulp.task('html', function() {
 });
 
 gulp.task('browser-sync', function() {
-    return browserSync.init({
+    browserSync.init({
+        port: 9000,
         server: {
             baseDir: './_dev/'
         },
@@ -117,7 +118,6 @@ gulp.task('clean', function() {
     return gulp.src('build/')
         .pipe(clean());
 });
-
 //________________________/images/______________________//
 gulp.task('img', function() {
     return gulp.src('_dev/png/**/*')
