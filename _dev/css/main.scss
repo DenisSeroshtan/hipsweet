@@ -12,7 +12,7 @@ $transparent: rgba(236, 212, 212, 0.15);
 @import "_misc/form_reset";
 
 //styles
-@import "plugins/bx-slider_reset";     
+@import "plugins/bower_reset";     
 @import "plugins/gradient";    
 @import "plugins/sprite";    
 
@@ -23,6 +23,7 @@ $transparent: rgba(236, 212, 212, 0.15);
 @import "sections/deliver"; 
 @import "sections/team"; 
 @import "sections/questions"; 
+@import "sections/map"; 
 @import "sections/footer"; 
 
 

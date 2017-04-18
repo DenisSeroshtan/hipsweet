@@ -87,3 +87,27 @@ $(document).ready(function() {
     }());
 
 });
+    //________________________/yandex map/______________________//
+ymaps.ready(init);
+
+function init(){     
+    var myMap = new ymaps.Map("map", {
+        center: [56.83867091, 60.59793548],
+        zoom: 16,
+        controls: []
+    });
+     myPlacemark = new ymaps.Placemark([56.83867091, 60.59793548], { 
+        hintContent: 'Hipsweet', 
+        balloonContent: 'Hipsweet ул. 8 Марта, 8' 
+    },
+    {
+        iconLayout: 'default#image',
+        iconImageHref: '/png/map/metka.png',
+        iconImageSize: [42, 59],
+        iconImageOffset: [-20, -60]
+    });                                  
+  
+  myMap.behaviors.disable(['scrollZoom']);
+  
+  myMap.geoObjects.add(myPlacemark); 
+}

@@ -22,3 +22,10 @@
 .fancybox-skin{
     background-image: url('../png/deliver/pattern.png'); 
 }
+
+.fancybox-overlay{
+  background: rgba(0, 0, 0, 0.65)
+}
+.fancybox-close{
+  background: url('/png/decor/fancybox_sprite.png');
+}

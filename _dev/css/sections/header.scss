@@ -19,7 +19,7 @@
     @include inlineblock(middle);
     height: rem(70px);
     width: rem(85px);
-    background-image: url(../png/icons/logo/Logo.png);  
+    background-image: url(/png/icons/logo/Logo.png);  
     @include cover;
     
 }

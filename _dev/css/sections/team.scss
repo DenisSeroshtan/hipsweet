@@ -132,7 +132,7 @@
 .form__wrap {
     display: block;
     width: rem(843px);
-    background-image: url('../png/team/choc-bg.png');
+    background-image: url('/png/team/choc-bg.png');
     @include cover;
     border-radius: rem(15px);
     @include clearfix;
@@ -238,7 +238,7 @@
         position:absolute;
         width: rem(50px);
         height: rem(51px);
-        background-image: url('../png/team/arrow.png');
+        background-image: url('/png/team/arrow.png');
         @include cover;
         top: 50%;
         left: 50%;;
@@ -249,7 +249,7 @@
     &:hover{
         background: #641a00;
         &:before{
-            background-image: url('../png/team/arrow-hov.png');
+            background-image: url('/png/team/arrow-hov.png');
         }
     }
 }

@@ -39,7 +39,7 @@
             opacity: 1;
         }
         .sweet__left-icon{
-            background-image: url("../png/icons/hov/mix-trigger.png");
+            background-image: url("/png/icons/hov/mix-trigger.png");
             
         }
     }
@@ -49,7 +49,7 @@
     @include inlineblock;
     width: rem(42px);
     height: rem(42px);
-    background-image: url("../png/icons/mix-trigger.png");
+    background-image: url("/png/icons/mix-trigger.png");
     @include cover;
     @include trans(background-image .3s);
     cursor: pointer;
@@ -126,6 +126,9 @@
     font-weight: bold;
     color: $white;
 }
+.icon{
+  fill: #616060;
+}
 //--------------sweet__middle--------------------
 .sweet__middle{
     width: 40%;
@@ -142,7 +145,7 @@
         height: rem(48px);
         width: rem(436px);
         position: absolute;
-        background-image: url('../png/slider/shadow.png');
+        background-image: url('/png/slider/shadow.png');
         @include cover;
         top: 100%;
         left: 0;
@@ -195,7 +198,7 @@
         position: absolute;
         width: rem(38px);
         height: rem(37px);
-        background-image: url(../png/decor/rub.png);
+        background-image: url(/png/decor/rub.png);
         @include cover;
         top: 50%;
         margin-top: rem(-16px);

@@ -109,7 +109,7 @@
                                                 </tr>
                                                 <tr class="tr__ing">
                                                     <td class="td__ing-pic">
-                                                        <svg class="icon svg-flower-dims">
+                                                        <svg class="icon svg-egg-dims">
                                                             <use xlink:href="svg/icons/sprite/sprite.svg#egg"></use>
                                                         </svg>
                                                     </td>
@@ -118,7 +118,7 @@
                                                 </tr>
                                                 <tr class="tr__ing">
                                                     <td class="td__ing-pic">
-                                                        <svg class="icon svg-flower-dims">
+                                                        <svg class="icon svg-sugar-dims">
                                                             <use xlink:href="svg/icons/sprite/sprite.svg#sugar"></use>
                                                         </svg>
                                                     </td>
@@ -127,7 +127,7 @@
                                                 </tr>
                                                 <tr class="tr__ing">
                                                     <td class="td__ing-pic">
-                                                        <svg class="icon svg-flower-dims">
+                                                        <svg class="icon svg-oil-dims">
                                                             <use xlink:href="svg/icons/sprite/sprite.svg#oil"></use>
                                                         </svg>
                                                     </td>
@@ -136,7 +136,7 @@
                                                 </tr>
                                                 <tr class="tr__ing">
                                                     <td class="td__ing-pic">
-                                                        <svg class="icon svg-flower-dims">
+                                                        <svg class="icon svg-milk-dims">
                                                             <use xlink:href="svg/icons/sprite/sprite.svg#milk"></use>
                                                         </svg>
                                                     </td>
@@ -773,10 +773,10 @@
                             <div class="form__bl form__left">Закажи сейчас</div>
                             <div class="form__bl form__right">
                                 <div class="form__right-wrap">
-                                    <form action="#" method="get" class="form__init">
-                                        <input type="text" class="form__input name" placeholder="Введите ваше Имя">
-                                        <input type="email" class="form__input email" placeholder="Введите ваш E-mail">
-                                        <input type="tel" class="form__input tel" placeholder="8(___) ___-__-__">
+                                    <form action="#" method="post" class="form__init">
+                                        <input type="text" class="form__input name" name="name" placeholder="Введите ваше Имя">
+                                        <input type="email" class="form__input email" name="email" placeholder="Введите ваш E-mail">
+                                        <input type="tel" class="form__input tel" name="phone" placeholder="8(___) ___-__-__">
                                         <input type="checkbox" name="checkbox" class="form__check" checked id="check">
                                         <label class="check__text" for="check">Заказать обратный звонок</label>
                                         <button class="form__btn" type="submit"></button>
@@ -832,7 +832,11 @@
                 </ul>
             </div>
         </section>
-        <!--________________________/footer/_____________________________-->
+        <!--________________________/yandex map/______________________-->
+        <section  class="section__map">
+          <div id="map" class = "map"></div>
+        </section>
+         <!--________________________/footer/_____________________________-->
         <footer class="footer">
             <div class="container footer">
                 <div class="footer__icon">
@@ -862,6 +866,7 @@
         </footer>
     </div>
     <script src="js/vendor.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script>
         svg4everybody();
     </script>

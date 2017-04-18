@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     wiredep = require('gulp-wiredep'),
     useref = require('gulp-useref'),
-    uglify = require('gulp-uglifyjs'),
+    uglify = require('gulp-uglifyjs'), 
     browserSync = require('browser-sync'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
@@ -27,7 +27,7 @@ gulp.task('default', ['watch']);
 gulp.task('watch', ['browser-sync'], function() {
     gulp.watch('_dev/css/**/*.scss', ['sass']);
     gulp.watch(['./bower.json','_dev/*.html'], ['html']).on('change', browserSync.reload);
-    gulp.watch('_dev/js/**/*.js').on('change', browserSync.reload);
+    gulp.watch('_dev/js/**/*.js').on('change', browserSync.reload); 
 });
 
 gulp.task('sass', function() {
@@ -118,7 +118,7 @@ gulp.task('clean', function() {
     return gulp.src('build/')
         .pipe(clean());
 });
-//________________________/images/______________________//
+//________________________/png/______________________//
 gulp.task('img', function() {
     return gulp.src('_dev/png/**/*')
         .pipe(cache(imagemin({

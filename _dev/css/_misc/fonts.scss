@@ -1,10 +1,9 @@
 @font-face {
     font-family: 'als_malinaregular';
-    src: url('../fonts/malina-webfont.woff') format('woff'),
-         url('../fonts/malina-webfont.svg#als_malinaregular') format('svg');
+    src: url('/fonts/malina-webfont.woff') format('woff'),
+         url('/fonts/malina-webfont.svg#als_malinaregular') format('svg');
     font-weight: normal;
     font-style: normal; 
-
 }
 
 @mixin malina{
