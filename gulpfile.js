@@ -118,6 +118,16 @@ gulp.task('clean', function() {
     return gulp.src('build/')
         .pipe(clean());
 });
+
+gulp.task('server', function() {
+    browserSync.init({
+        port: 9000,
+        server: {
+            baseDir: './build/'
+        },
+        notify: false
+    });
+});
 //________________________/png/______________________//
 gulp.task('img', function() {
     return gulp.src('_dev/png/**/*')

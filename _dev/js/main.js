@@ -1,3 +1,8 @@
+//________________________/preloader/______________________//
+window.onload = function() {
+    document.querySelector('.wrapper').classList.add('loaded');
+};
+
 $(document).ready(function() {
     //________________________/slider/______________________//
     $('.slider__list').bxSlider({
@@ -15,7 +20,7 @@ $(document).ready(function() {
     //________________________/akkordeon/______________________//
     $(function() {
 
-        $('.questions__item-trigger').on('click', function(e) {
+        $('.questions__item').on('click', function(e) {
             e.preventDefault();
 
             var
@@ -78,7 +83,6 @@ $(document).ready(function() {
     $(function() {
         $('a[href^="#js"]').on('click', function(e) {
             e.preventDefault();
-
             var target = $(this).attr('href');
             $('html, body').animate({
                 scrollTop: $(target).offset().top
@@ -86,28 +90,31 @@ $(document).ready(function() {
         });
     }());
 
-});
     //________________________/yandex map/______________________//
-ymaps.ready(init);
+    (function() {
 
-function init(){     
-    var myMap = new ymaps.Map("map", {
-        center: [56.83867091, 60.59793548],
-        zoom: 16,
-        controls: []
-    });
-     myPlacemark = new ymaps.Placemark([56.83867091, 60.59793548], { 
-        hintContent: 'Hipsweet', 
-        balloonContent: 'Hipsweet ул. 8 Марта, 8' 
-    },
-    {
-        iconLayout: 'default#image',
-        iconImageHref: '/png/map/metka.png',
-        iconImageSize: [42, 59],
-        iconImageOffset: [-20, -60]
-    });                                  
-  
-  myMap.behaviors.disable(['scrollZoom']);
-  
-  myMap.geoObjects.add(myPlacemark); 
-}
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [55.75931658, 37.60628500],
+                zoom: 15,
+                controls: ["zoomControl"]
+            });
+            myPlacemark = new ymaps.Placemark([55.75931658, 37.60628500], {
+                hintContent: 'Hipsweet',
+                balloonContent: 'г. Москва, Вознесенский переулок 44 оф. 166'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: '/png/map/metka.png',
+                iconImageSize: [42, 59],
+                iconImageOffset: [-20, -60]
+            });
+
+            myMap.behaviors.disable(['scrollZoom']);
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+    }());
+
+});

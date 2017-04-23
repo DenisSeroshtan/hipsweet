@@ -16,7 +16,6 @@
     @include malina;
     font-size: rem(40px);
     color: #ffffff;
-//    margin-top: rem(95px);
 }
 
 .questions__list {
@@ -53,10 +52,10 @@
             border-bottom: transparent;
         }
         .questions__item-text{
-//            display: block;
         }
     }
 }
+
 .questions__item-title {
     display: inline-block;
     color: #fff;

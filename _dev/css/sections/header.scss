@@ -28,14 +28,12 @@
     @include malina;
     font-size: rem(40px);
     color: #fca211;
-    margin-left: rem(10px);
+    margin-left: rem(5px);
     
 }
 .header__menu{
     width: 55%;
     margin-top: rem(40px);
-    padding-left: rem(50px);
-
 }
 .nav__list{
     text-align: center;
@@ -153,6 +151,7 @@
 .header__icons{
     float: right;
     width: 15%;
+    margin-top: rem(40px);
 }
 .header__icons-list{
     display: block;
@@ -162,7 +161,7 @@
     width: 42px;
     height: 42px;
     @include inlineblock(middle);
-    margin: rem(40px) 0 0 rem(25px);
+    margin-left:rem(25px);
 }
 .header__icons-link {
     display: block;

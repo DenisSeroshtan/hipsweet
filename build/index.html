@@ -14,7 +14,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cackes</title>
+    <title>Hipsweet</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="png/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="png/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="png/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="png/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="png/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="png/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="png/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="png/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="png/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="png/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="png/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="png/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="png/favicon/favicon-16x16.png">
+    <link rel="manifest" href="png/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="png/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=1100">
     <link rel="stylesheet" href="css/vendor.css">
@@ -24,6 +41,10 @@
 
 <body>
     <div class="wrapper">
+        <!-----------------------preloader-------------------------->
+        <div class="round"></div>
+        <div class="pl__left"></div>
+        <div class="pl__right"></div>
         <!--________________________/section__capcake/___________________-->
         <section class="section__capcake">
             <!--________________________/header capcake/______________________-->
@@ -39,34 +60,40 @@
                                 <ul class="nav__list">
                                     <li class="nav__item"><a href="#js-deliver" class="nav__link">Сладости</a>
                                         <ul class="nav__dropdown">
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Торты</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Печенье
+                                            <li class="nav__dropdown-item"><a href="#js-deliver" class="nav__dropdown-link">Торты</a></li>
+                                            <li class="nav__dropdown-item"><a href="#js-deliver" class="nav__dropdown-link">Печенье
                                                   </a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Пончики</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Рулеты</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Зефир</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Шоколад</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Пирожные</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Конфеты</a></li>
+                                            <li class="nav__dropdown-item"><a href="#js-deliver" class="nav__dropdown-link">Пончики</a></li>
+                                            <li class="nav__dropdown-item"><a href="#js-deliver" class="nav__dropdown-link">Рулеты</a></li>
+                                            <li class="nav__dropdown-item"><a href="#js-deliver" class="nav__dropdown-link">Зефир</a></li>
+                                            <li class="nav__dropdown-item"><a href="#js-deliver" class="nav__dropdown-link">Шоколад</a></li>
+                                            <li class="nav__dropdown-item"><a href="#js-deliver" class="nav__dropdown-link">Пирожные</a></li>
+                                            <li class="nav__dropdown-item"><a href="#js-deliver" class="nav__dropdown-link">Конфеты</a></li>
                                         </ul>
                                     </li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Компания</a></li>
+                                    <li class="nav__item"><a href="#js-questions" class="nav__link">Доставка</a></li>
+                                    <li class="nav__item"><a href="#js-map" class="nav__link">Компания</a>
+                                        <ul class="nav__dropdown">
+                                            <li class="nav__dropdown-item"><a href="#js-map" class="nav__dropdown-link">О нас</a></li>
+                                            <li class="nav__dropdown-item"><a href="#js-map" class="nav__dropdown-link">Филиалы</a></li>
+                                            <li class="nav__dropdown-item"><a href="#js-map" class="nav__dropdown-link">Контакты</a></li>
+                                        </ul>
+                                    </li>
                                     <li class="nav__item">
                                         <a href="#js-team" class="nav__link"> 
                                                 Команда</a>
                                         <ul class="nav__dropdown">
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Тони Ройстер</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Ричард
+                                            <li class="nav__dropdown-item"><a href="#js-team" class="nav__dropdown-link">Тони Ройстер</a></li>
+                                            <li class="nav__dropdown-item"><a href="#js-team" class="nav__dropdown-link">Ричард
                                                         Джейс</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Майти Модстер</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Ричард
+                                            <li class="nav__dropdown-item"><a href="#js-team" class="nav__dropdown-link">Майти Модстер</a></li>
+                                            <li class="nav__dropdown-item"><a href="#js-team" class="nav__dropdown-link">Ричард
                                                         Джейс</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Ричард
+                                            <li class="nav__dropdown-item"><a href="#js-team" class="nav__dropdown-link">Ричард
                                                         Джейс</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Ричард
+                                            <li class="nav__dropdown-item"><a href="#js-team" class="nav__dropdown-link">Ричард
                                                         Джейс</a></li>
-                                            <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Ричард
+                                            <li class="nav__dropdown-item"><a href="#js-team" class="nav__dropdown-link">Ричард
                                                         Джейс</a></li>
                                         </ul>
                                     </li>
@@ -86,7 +113,6 @@
                     </div>
                 </div>
             </header>
-
             <div class="capcake__about">
                 <div class="container">
                     <!--________________________/slider/______________________-->
@@ -145,7 +171,6 @@
                                                 </tr>
                                             </table>
                                         </div>
-
                                         <div class="sweet__left-text">Ингредиенты</div>
                                     </div>
                                     <div class="sweet__left-time">
@@ -159,7 +184,8 @@
                                 <div class="sweet__right">
                                     <div class="sweet__right-desc">
                                         <div class="sweet__right-title">
-                                            <h2 class="h2__title">Sweet Cupcake</h2></div>
+                                            <h2 class="h2__title">Sweet Cupcake</h2>
+                                        </div>
                                         <div class="sweet__right-text">
                                             <p>В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
                                         </div>
@@ -172,7 +198,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </li>
                             <li class="slider__item-sweet">
                                 <div class="sweet__left">
@@ -227,7 +252,6 @@
                                                 </tr>
                                             </table>
                                         </div>
-
                                         <div class="sweet__left-text">Ингредиенты</div>
                                     </div>
                                     <div class="sweet__left-time">
@@ -241,7 +265,8 @@
                                 <div class="sweet__right">
                                     <div class="sweet__right-desc">
                                         <div class="sweet__right-title">
-                                            <h2 class="h2__title2">Cackes</h2></div>
+                                            <h2 class="h2__title2">Cackes</h2>
+                                        </div>
                                         <div class="sweet__right-text">
                                             <p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами. Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами. Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</p>
                                         </div>
@@ -254,7 +279,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </li>
                             <li class="slider__item-sweet">
                                 <div class="sweet__left">
@@ -309,7 +333,6 @@
                                                 </tr>
                                             </table>
                                         </div>
-
                                         <div class="sweet__left-text">Ингредиенты</div>
                                     </div>
                                     <div class="sweet__left-time">
@@ -323,7 +346,8 @@
                                 <div class="sweet__right">
                                     <div class="sweet__right-desc">
                                         <div class="sweet__right-title">
-                                            <h2 class="h2__title2">Rolls</h2></div>
+                                            <h2 class="h2__title2">Rolls</h2>
+                                        </div>
                                         <div class="sweet__right-text">
                                             <p>В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
                                         </div>
@@ -336,7 +360,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </li>
                             <li class="slider__item-sweet">
                                 <div class="sweet__left">
@@ -405,7 +428,8 @@
                                 <div class="sweet__right">
                                     <div class="sweet__right-desc">
                                         <div class="sweet__right-title">
-                                            <h2 class="h2__title2">Donuts</h2></div>
+                                            <h2 class="h2__title2">Donuts</h2>
+                                        </div>
                                         <div class="sweet__right-text">
                                             <p>В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
                                         </div>
@@ -418,7 +442,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </li>
                             <li class="slider__item-sweet">
                                 <div class="sweet__left">
@@ -487,7 +510,8 @@
                                 <div class="sweet__right">
                                     <div class="sweet__right-desc">
                                         <div class="sweet__right-title">
-                                            <h2 class="h2__title2">Zefir</h2></div>
+                                            <h2 class="h2__title2">Zefir</h2>
+                                        </div>
                                         <div class="sweet__right-text">
                                             <p>В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
                                         </div>
@@ -569,7 +593,8 @@
                                 <div class="sweet__right">
                                     <div class="sweet__right-desc">
                                         <div class="sweet__right-title">
-                                            <h2 class="h2__title2">Cookie</h2></div>
+                                            <h2 class="h2__title2">Cookie</h2>
+                                        </div>
                                         <div class="sweet__right-text">
                                             <p>В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
                                         </div>
@@ -624,7 +649,10 @@
             <div class="container deliver">
                 <div class="deliver__caption" id="js-deliver">
                     <div class="deliver__caption-title">Мы поставляем</div>
-                    <div class="deliver__caption-desc">Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку вы можете заполнив <a href="#js-form" class="deliver__caption-link">форму</a>. После с Вами свяжется один из наших поваров и обсудит заказ более детально.</div>
+                    <div class="deliver__caption-desc">
+                        <p>
+                            Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку вы можете заполнив <a href="#js-form" class="deliver__caption-link">форму</a>. После с Вами свяжется один из наших поваров и обсудит заказ более детально.</div>
+                    </p>
                 </div>
                 <ul class="deliver__list">
                     <li class="deliver__item">
@@ -633,7 +661,9 @@
                                 <div class="deliver__item-pic-wrap"><img src="png/deliver/tort1.png" alt="images deliver" class="deliver__item-pic-img"></div>
                             </div>
                             <div class="deliver__item-title">Торты</div>
-                            <div class="deliver__item-text">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</div>
+                            <div class="deliver__item-text">
+                                <p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</p>
+                            </div>
                         </a>
                     </li>
                     <li class="deliver__item">
@@ -642,7 +672,9 @@
                                 <div class="deliver__item-pic-wrap"><img src="png/deliver/cookie.png" alt="images deliver" class="deliver__item-pic-img"></div>
                             </div>
                             <div class="deliver__item-title">Печенье</div>
-                            <div class="deliver__item-text">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</div>
+                            <div class="deliver__item-text">
+                                <p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</p>
+                            </div>
                         </a>
                     </li>
                     <li class="deliver__item">
@@ -651,7 +683,9 @@
                                 <div class="deliver__item-pic-wrap"><img src="png/deliver/ponchik.png" alt="images deliver" class="deliver__item-pic-img"></div>
                             </div>
                             <div class="deliver__item-title">Пончики</div>
-                            <div class="deliver__item-text">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</div>
+                            <div class="deliver__item-text">
+                                <p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</p>
+                            </div>
                         </a>
                     </li>
                     <li class="deliver__item">
@@ -660,7 +694,9 @@
                                 <div class="deliver__item-pic-wrap"><img src="png/deliver/rulet.png" alt="images deliver" class="deliver__item-pic-img"></div>
                             </div>
                             <div class="deliver__item-title">Рулеты</div>
-                            <div class="deliver__item-text">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</div>
+                            <div class="deliver__item-text">
+                                <p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</p>
+                            </div>
                         </a>
                     </li>
                     <li class="deliver__item">
@@ -669,7 +705,9 @@
                                 <div class="deliver__item-pic-wrap"><img src="png/deliver/zefir.png" alt="images deliver" class="deliver__item-pic-img"></div>
                             </div>
                             <div class="deliver__item-title">Зефир</div>
-                            <div class="deliver__item-text">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</div>
+                            <div class="deliver__item-text">
+                                <p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</p>
+                            </div>
                         </a>
                     </li>
                     <li class="deliver__item">
@@ -678,7 +716,9 @@
                                 <div class="deliver__item-pic-wrap"><img src="png/deliver/chokolat.png" alt="images deliver" class="deliver__item-pic-img"></div>
                             </div>
                             <div class="deliver__item-title">Шоколад</div>
-                            <div class="deliver__item-text">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</div>
+                            <div class="deliver__item-text">
+                                <p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</p>
+                            </div>
                         </a>
                     </li>
                     <li class="deliver__item">
@@ -687,7 +727,9 @@
                                 <div class="deliver__item-pic-wrap"><img src="png/deliver/pirog.png" alt="images deliver" class="deliver__item-pic-img"></div>
                             </div>
                             <div class="deliver__item-title">Пирожные</div>
-                            <div class="deliver__item-text">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</div>
+                            <div class="deliver__item-text">
+                                <p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</p>
+                            </div>
                         </a>
                     </li>
                     <li class="deliver__item">
@@ -696,7 +738,9 @@
                                 <div class="deliver__item-pic-wrap"><img src="png/deliver/confi.png" alt="images deliver" class="deliver__item-pic-img"></div>
                             </div>
                             <div class="deliver__item-title">Конфеты</div>
-                            <div class="deliver__item-text">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</div>
+                            <div class="deliver__item-text">
+                                <p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -761,8 +805,9 @@
 
                         </li>
                         <li class="team__tabs">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt expedita autem alias vel error, hic assumenda delectus itaque fuga molestiae adipisci! Voluptates ad similique culpa neque! Maiores exceptucipit atque assumenda. Commodi cumque architecto voluptate nemo vitae, alias deleniti quidem, ab molestias odio numquam repellendus ratione, fugiat eaque iste sed soluta est, consequuntur cupiditate placeat dolores rem voluptas hic nam! Eum, inventore aliquid.</p>
+                            <p><i>Doloribus maxime iure numquam animi enim error adipisci totam dolor, qui obcaecati atur, sed dolorum ducimus iure fugiat alias suscipit atque assumenda.</i> Commodi cumque architecto voluptate nemo vitae, alias deleniti quidem, ab molestias odio numquam repellendus ratione, fugiat eaque iste sed soluta est, consequuntur cupiditate placeat dolores rem voluptas hic nam! Eum, inventore aliquid.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt expedita autem alias vel error, odio dolorum voluptatum, eum ducimus aliquam, unde repudiandae ea tempora, hic assumenda delectus itaque fuga molestiae adipisci! Voluptates ad similique culpa neque! Maiores exceptucipit atque assumenda. Commodi cumque architecto voluptate nemo vitae, alias deleniti quidem, ab molestias odio numquam repellendus ratione, fugiat eaque iste sed soluta est, consequuntur cupiditate placeat dolores rem voluptas hic nam! Eum, inventore aliquid.</p>
-                            <p><i>Doloribus maxime iure numquam animi enim error adipisci totam dolor, qui obcaecati alias assumenda voluptas, et, molestias quisquam ex tenetur labore. Distinctio ut totam delectus magni doloribus. Obcaecati consequuntur excepturi dicta animi ullam ratione at temporibus corporis voluptatum facilis ipsam a sunt aliquam quis inventore, minima aspernatur, sed dolorum ducimus iure fugiat alias suscipit atque assumenda.</i> Commodi cumque architecto voluptate nemo vitae, alias deleniti quidem, ab molestias odio numquam repellendus ratione, fugiat eaque iste sed soluta est, consequuntur cupiditate placeat dolores rem voluptas hic nam! Eum, inventore aliquid.</p>
                         </li>
                     </ul>
                 </div>
@@ -789,7 +834,7 @@
             </div>
         </section>
         <!--________________________/section questions/__________________-->
-        <section class="section__questions">
+        <section class="section__questions" id="js-questions">
             <div class="container questions">
                 <div class="questions__title">Часто задаваемые вопросы</div>
                 <ul class="questions__list">
@@ -833,10 +878,10 @@
             </div>
         </section>
         <!--________________________/yandex map/______________________-->
-        <section  class="section__map">
-          <div id="map" class = "map"></div>
+        <section class="section__map" id="js-map">
+            <div id="map" class="map"></div>
         </section>
-         <!--________________________/footer/_____________________________-->
+        <!--________________________/footer/_____________________________-->
         <footer class="footer">
             <div class="container footer">
                 <div class="footer__icon">
@@ -844,7 +889,7 @@
                     <div class="footer__icon-text">Hipsweet</div>
                 </div>
                 <div class="footer__copyright">&copy;2016 Все права защищены.</div>
-                <div class="footer__adress">г. Москва, Вознесенский проспект 44 оф 166</div>
+                <div class="footer__adress">г. Москва, Вознесенский переулок 44 оф. 166</div>
                 <ul class="socials__list">
                     <li class="socials__item ">
                         <a href="#" class="socials__item-link fb"></a>
